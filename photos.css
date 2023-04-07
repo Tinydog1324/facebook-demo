@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #4267B2;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  .blue {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .photo-container {
+    width: 25%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+     overflow: hidden;
+  }
+  
+  .photo-container:hover {
+    transform: scale(1.05);
+    
+  }
+
+.blue:hover{
+text-decoration: underline;
+}
+  
+  .photo-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  }
+  
+  #modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  #modal-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+
+footer {
+      background-color: #F4F4F4;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    footer li {
+      margin-right: 10px;
+    }
+    footer a {
+      color: #385899;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
